@@ -5,8 +5,8 @@ Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-912
 ------------------------------------------------------------------------------
 
 * 🌍  I'm based in Delhi, India
-* 🖥️  See my portfolio at [Portfolio Coming Soon](http://www.linkedin.com/in/sidhantmalik/)
-* ✉️  You can contact me @ [sidhant.malik2094@gmail.com](mailto:sidhant.malik2094@gmail.com)
+* 🖥️  See my portfolio at https://taranwtf.vercel.app/
+* ✉️  You can contact me @ [taranjyotsvig@gmail.com](mailto:taranjyotsvig@gmail.com)
 * 🚀  I'm currently working on: [IntelliDoc (AI Based Smart PDF Reader)](http://github.com/sidhant2094/IntelliDocJulyFinal)
 
 <p align="left">
