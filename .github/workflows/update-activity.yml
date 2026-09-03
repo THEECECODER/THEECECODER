@@ -1,0 +1,36 @@
+name: Update README activity
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate activity section
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_activity.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "Taranjyot Singh"
+          git config user.email "taranjyotsvig@gmail.com"
+          if git diff --quiet -- README.md; then
+            echo "README unchanged"
+            exit 0
+          fi
+          git add README.md
+          git commit -m "chore: update recent activity"
+          git push
